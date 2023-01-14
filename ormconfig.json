@@ -7,8 +7,8 @@
   "host": "localhost",
   "port": 5432,
   "database": "queries_challenge",
-  "entities": ["./src/modules/**/entities/*.ts"],
-  "migrations": ["./src/database/migrations/*.ts"],
+  "entities": [  "src/modules/**/*.entity.{ts,js}"],
+  "migrations": ["src/migrations/**/*.{ts,js}"],
   "cli": {
     "migrationsDir": "./src/database/migrations"
   }

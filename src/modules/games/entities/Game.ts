@@ -18,7 +18,7 @@ export class Game {
   title: string;
 
   @ManyToMany(() => User, (user) => user.games)
-  users: User[];
+  users: User[]; 
 
   @CreateDateColumn()
   created_at: Date; 
